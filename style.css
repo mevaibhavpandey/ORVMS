@@ -794,20 +794,44 @@ textarea.form-input{resize:vertical;min-height:110px;}
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  background-image: 
-    linear-gradient(rgba(249,115,22,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(249,115,22,0.025) 1px, transparent 1px);
-  background-size: 60px 60px;
-  -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, #000 30%, transparent 100%);
-  mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, #000 30%, transparent 100%);
+  background-image:
+    linear-gradient(rgba(249,115,22,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249,115,22,0.06) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 90% at 50% 50%, #000 20%, transparent 80%);
+  mask-image: radial-gradient(ellipse 80% 90% at 50% 50%, #000 20%, transparent 80%);
+  animation: gridShimmer 8s ease-in-out infinite alternate;
+}
+
+@keyframes gridShimmer {
+  0%   { opacity: 0.5; background-size: 72px 72px; }
+  100% { opacity: 1;   background-size: 76px 76px; }
+}
+
+.tech-grid-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle 2px at 0px 0px, rgba(249,115,22,0.5) 0%, transparent 100%),
+    radial-gradient(circle 2px at 72px 0px, rgba(249,115,22,0.5) 0%, transparent 100%);
+  background-size: 72px 72px;
+  animation: dotPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes dotPulse {
+  0%   { opacity: 0.3; }
+  100% { opacity: 0.9; }
 }
 
 .tech-grid-bg::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(16,185,129,0.02) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(234,179,8,0.02) 0%, transparent 50%);
+  background:
+    radial-gradient(ellipse 60% 50% at 15% 85%, rgba(16,185,129,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 85% 15%, rgba(234,179,8,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(249,115,22,0.04) 0%, transparent 70%);
 }
 
 /* ── Data Flow Background (Skills) ── */
@@ -816,8 +840,8 @@ textarea.form-input{resize:vertical;min-height:110px;}
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(100vw, 800px);
-  height: min(100vw, 800px);
+  width: min(100vw, 900px);
+  height: min(100vw, 900px);
   z-index: 0;
   pointer-events: none;
 }
@@ -828,60 +852,116 @@ textarea.form-input{resize:vertical;min-height:110px;}
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 1px solid rgba(249,115,22,0.04);
 }
 
 .ring-1 {
-  width: 40%;
-  height: 40%;
-  border-style: dashed;
-  animation: spin 30s linear infinite reverse;
+  width: 35%;
+  height: 35%;
+  border: 1px dashed rgba(249,115,22,0.18);
+  animation: spin 20s linear infinite reverse;
+  box-shadow: 0 0 25px rgba(249,115,22,0.08) inset, 0 0 25px rgba(249,115,22,0.08);
 }
 
 .ring-2 {
-  width: 75%;
-  height: 75%;
-  border-top: 1px solid rgba(16,185,129,0.08);
-  border-bottom: 1px solid rgba(16,185,129,0.08);
-  animation: spin 45s linear infinite;
+  width: 70%;
+  height: 70%;
+  border: 1px solid rgba(16,185,129,0.12);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: spin 35s linear infinite;
+  box-shadow: 0 0 40px rgba(16,185,129,0.06) inset;
+}
+
+/* Extra third ring */
+.data-flow-bg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  border: 1px dashed rgba(234,179,8,0.08);
+  border-top-color: rgba(234,179,8,0.2);
+  animation: spin 55s linear infinite reverse;
+}
+
+/* Radar sweep inside the skills section */
+.data-flow-bg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: conic-gradient(from 0deg,
+    rgba(249,115,22,0.14) 0deg,
+    rgba(249,115,22,0.04) 60deg,
+    transparent 120deg
+  );
+  animation: radarSweep 10s linear infinite;
 }
 
 .data-node {
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   background: var(--gold);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--gold);
+  box-shadow: 0 0 10px var(--gold), 0 0 20px var(--gold);
   opacity: 0;
 }
 
-.node-1 { top: 20%; left: 30%; animation: nodePulse 8s ease-in-out infinite; }
-.node-2 { top: 70%; left: 70%; animation: nodePulse 8s ease-in-out infinite 3s; }
-.node-3 { top: 40%; left: 80%; animation: nodePulse 8s ease-in-out infinite 6s; }
+.node-1 { top: 18%; left: 28%; animation: nodePulse 7s ease-in-out infinite; }
+.node-2 { top: 72%; left: 68%; animation: nodePulse 7s ease-in-out infinite 2.5s; }
+.node-3 { top: 38%; left: 82%; animation: nodePulse 7s ease-in-out infinite 5s; }
 
 @keyframes nodePulse {
-  0%, 100% { opacity: 0; transform: scale(1); }
-  50% { opacity: 0.6; transform: scale(1.5); box-shadow: 0 0 20px var(--gold); }
+  0%, 100% { opacity: 0; transform: scale(0.8); }
+  40%, 60% { opacity: 1; transform: scale(2); box-shadow: 0 0 30px var(--gold), 0 0 60px rgba(234,179,8,0.4); }
 }
 
 /* ── Timeline Pulse (Defense) ── */
 .timeline-pulse {
   position: absolute;
-  left: -2px; /* aligned with the 3px width timeline line */
+  left: -4px;
   top: 0;
-  width: 7px;
-  height: 25px;
-  background: var(--orange);
-  border-radius: 10px;
-  box-shadow: 0 0 15px var(--orange), 0 0 30px var(--orange);
+  width: 11px;
+  height: 35px;
+  background: linear-gradient(to bottom, var(--gold), var(--orange));
+  border-radius: 12px;
+  box-shadow: 0 0 18px var(--orange), 0 0 40px rgba(249,115,22,0.5);
   z-index: 2;
-  animation: pulseDown 8s ease-in-out infinite;
+  animation: pulseDown 7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.timeline-pulse::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(249,115,22,0.2);
+  animation: pulseRipple 7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes pulseDown {
-  0% { top: 0; opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
+  0%   { top: 0%;   opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes pulseRipple {
+  0%   { top: 0%;   opacity: 0; transform: translate(-50%, -50%) scale(1); }
+  8%   { opacity: 1; }
+  50%  { transform: translate(-50%, -50%) scale(2); opacity: 0.3; }
+  92%  { opacity: 0.3; }
   100% { top: 100%; opacity: 0; }
 }
