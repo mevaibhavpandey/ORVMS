@@ -1,14 +1,15 @@
-﻿// Central Content and Logic for Vaibhav Pandey Portfolio
+// Central Content and Logic for Vaibhav Pandey Portfolio
 // No frameworks, simple and vanilla for easy deployment to GitHub Pages.
 
 const personalInfo = {
   name: 'Vaibhav Pandey',
-  tagline: 'Software Engineer  Â·  Full-Stack Developer  Â·  AI/ML Developer',
+  tagline: 'Software Engineer  ·  Full-Stack Developer  ·  AI/ML Developer',
   intro: 'Computer Science & Engineering student (CGPA 8.86) passionate about full-stack architectures, high-performance SDE systems and applied AI/ML applications. Committed to merging cutting-edge technology with high-impact software solutions.',
   email: 'vaibhav.pandey1661@gmail.com',
   phone: '+91 8683081192',
   linkedin: 'https://www.linkedin.com/in/vaibhav-pandey-7ba67033a/',
   github: 'https://github.com/mevaibhavpandey',
+  leetcode: 'https://leetcode.com/u/mevaibhavpandey/',
   resumePdf: 'assets/pdfs/Resume.pdf' // Main resume PDF link
 };
 
@@ -203,18 +204,18 @@ const projects = [
       'Responsive HUD UI: Uses clean CSS transitions and dark mode presets to present an immersive testing layout.'
     ],
     color: '#38BDF8',
-    icon: 'â“',
+    icon: 'â “',
     github: 'https://github.com/mevaibhavpandey/Quiz-Application'
   }
 ];
 
 const timelineEvents = [
-  { date: 'Sep 2023', event: 'NDA-1 2023', detail: 'Cleared Stage 1 at SSB â€” demonstrated potential; pursued growth.', status: 'progress' },
-  { date: 'Nov 2023', event: 'TES-50', detail: 'Cleared SSB (Indian Army) â€” building resilience with each attempt.', status: 'progress' },
-  { date: 'Jan 2024', event: 'NDA-2 2023', detail: 'Cleared Stage 1 at SSB â€” continued progress and determination.', status: 'progress' },
-  { date: 'Mar 2024', event: 'TES-51', detail: 'Cleared SSB, qualified and waitlisted â€” closer than ever.', status: 'progress' },
-  { date: 'May 2024', event: 'NDA-153 (IAF)', detail: 'Cleared SSB âœ¦ Selected â€” AIR 31, Indian Air Force Flying Branch.', status: 'selected', rank: 'AIR 31' },
-  { date: 'Nov 2024', event: 'TES-52 (Army)', detail: 'Cleared SSB âœ¦ Selected â€” AIR 50, Indian Army.', status: 'selected', rank: 'AIR 50' }
+  { date: 'Sep 2023', event: 'NDA-1 2023 | 31 SSB Jalandhar', detail: 'First SSB attempt at 31 Services Selection Board, Jalandhar. Cleared Stage 1 (OIR & PPDT) — Conferenced Out after completing the full five-day Stage 2 assessment covering psychological tests, Group Testing Officer tasks, and personal interview boards. A formative experience that laid the foundation.', status: 'progress' },
+  { date: 'Nov 2023', event: 'TES-50 | 19 SSB Prayagraj', detail: 'Attended SSB for TES-50 at 19 Services Selection Board, Prayagraj. Cleared Stage 1 — Conferenced Out after the five-day board. Refined self-understanding of officer-like qualities and continued building mental resilience with each assessment.', status: 'progress' },
+  { date: 'Jan 2024', event: 'NDA-2 2023 | 21 SSB Bhopal', detail: 'Attended SSB at 21 Services Selection Board, Bhopal. Cleared Stage 1 with strong OIR scores — Conferenced Out at the Conference round after completing Stage 2. Each attempt added sharpness to personality and leadership dimensions.', status: 'progress' },
+  { date: 'Mar 2024', event: 'TES-51 | 17 SSB Bangalore', detail: 'Attended SSB for TES-51 at 17 Services Selection Board, Bangalore. Cleared Stage 1 — Conferenced Out after the five-day board. Continued to build command qualities, situational judgment and group leadership skills with steely determination.', status: 'progress' },
+  { date: 'May 2024', event: 'NDA-153 (IAF) | 2 AFSB Mysore', detail: 'Attended SSB at 2 Air Force Selection Board, Mysore. Recommended by the board — AIR 31, Indian Air Force Flying Branch. Also cleared CPSS/PABT (Computerised Pilot Selection System / Pilot Aptitude Battery Test) — a once-in-a-lifetime DRDO-developed cockpit simulator assessment evaluating psychomotor skills, hand-eye-feet coordination, multitasking under pressure, and instrument comprehension for modern IAF fighter jet operations.', status: 'selected', rank: 'AIR 31' },
+  { date: 'Nov 2024', event: 'TES-52 (Army) | 32 SSB Jalandhar', detail: 'Final SSB at 32 Services Selection Board, Jalandhar. Recommended by the board for TES-52 (Indian Army Technical Entry Scheme) — AIR 50. Official merit list published on the Join Indian Army portal confirming the selection. A testament to sustained effort, discipline and unwavering resolve across six SSB attempts.', status: 'selected', rank: 'AIR 50' }
 ];
 
 const certifications = [

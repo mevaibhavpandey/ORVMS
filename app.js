@@ -3,12 +3,13 @@
 
 const personalInfo = {
   name: 'Vaibhav Pandey',
-  tagline: 'Software Engineer  Â·  Full-Stack Developer  Â·  AI/ML Developer',
+  tagline: 'Software Engineer  ·  Full-Stack Developer  ·  AI/ML Developer',
   intro: 'Computer Science & Engineering student (CGPA 8.86) passionate about full-stack architectures, high-performance SDE systems and applied AI/ML applications. Committed to merging cutting-edge technology with high-impact software solutions.',
   email: 'vaibhav.pandey1661@gmail.com',
   phone: '+91 8683081192',
   linkedin: 'https://www.linkedin.com/in/vaibhav-pandey-7ba67033a/',
   github: 'https://github.com/mevaibhavpandey',
+  leetcode: 'https://leetcode.com/u/mevaibhavpandey/',
   resumePdf: 'assets/pdfs/Resume.pdf' // Main resume PDF link
 };
 
@@ -209,12 +210,12 @@ const projects = [
 ];
 
 const timelineEvents = [
-  { date: 'Sep 2023', event: 'NDA-1 2023 \u2014 31 SSB Jalandhar', detail: 'First SSB attempt at 31 Services Selection Board, Jalandhar. Cleared Stage 1 (OIR & PPDT) — Conferenced Out after completing the full five-day Stage 2 assessment covering psychological tests, Group Testing Officer tasks, and interview boards. A formative experience that set the foundation.', status: 'progress' },
-  { date: 'Nov 2023', event: 'TES-50 \u2014 19 SSB Prayagraj', detail: 'SSB for TES-50 at 19 Services Selection Board, Prayagraj. Cleared Stage 1 — Conferenced Out after the five-day board. Refined self-understanding of officer-like qualities and continued building mental resilience.', status: 'progress' },
-  { date: 'Jan 2024', event: 'NDA-2 2023 \u2014 21 SSB Bhopal', detail: 'SSB at 21 Services Selection Board, Bhopal. Cleared Stage 1 with strong OIR scores — Conferenced Out at the Conference round after completing Stage 2. Each attempt added sharpness to personality and leadership dimensions.', status: 'progress' },
-  { date: 'Mar 2024', event: 'TES-51 \u2014 17 SSB Bangalore', detail: 'SSB for TES-51 at 17 Services Selection Board, Bangalore. Cleared Stage 1 — Conferenced Out after the five-day board. Continued to build command qualities, situational judgment and group leadership skills with steely determination.', status: 'progress' },
-  { date: 'May 2024', event: 'NDA-153 (IAF) \u2014 2 AFSB Mysore', detail: 'SSB at 2 Air Force Selection Board, Mysore (CV Complex, Siddharth Nagar). Recommended by the board \u2014 AIR 31, Indian Air Force Flying Branch. Additionally cleared the CPSS/PABT (Computerised Pilot Selection System / Pilot Aptitude Battery Test) \u2014 a rigorous, once-in-a-lifetime cockpit simulator assessment developed by DRDO to evaluate psychomotor skills, hand-eye-feet coordination, multitasking under pressure, and instrument comprehension for modern IAF fighter jet operations.', status: 'selected', rank: 'AIR 31' },
-  { date: 'Nov 2024', event: 'TES-52 (Army) \u2014 32 SSB Jalandhar', detail: 'Final SSB at 32 Services Selection Board, Jalandhar. Recommended by the board for TES-52 (Indian Army Technical Entry Scheme) \u2014 AIR 50. Official merit list published on the Join Indian Army portal confirming the selection. A testament to sustained effort, discipline and unwavering resolve across six SSB attempts.', status: 'selected', rank: 'AIR 50' }
+  { date: 'Sep 2023', event: 'NDA-1 2023 | 31 SSB Jalandhar', detail: 'First SSB attempt at 31 Services Selection Board, Jalandhar. Cleared Stage 1 (OIR & PPDT) — Conferenced Out after completing the full five-day Stage 2 assessment covering psychological tests, Group Testing Officer tasks, and personal interview boards. A formative experience that laid the foundation.', status: 'progress' },
+  { date: 'Nov 2023', event: 'TES-50 | 19 SSB Prayagraj', detail: 'Attended SSB for TES-50 at 19 Services Selection Board, Prayagraj. Cleared Stage 1 — Conferenced Out after the five-day board. Refined self-understanding of officer-like qualities and continued building mental resilience with each assessment.', status: 'progress' },
+  { date: 'Jan 2024', event: 'NDA-2 2023 | 21 SSB Bhopal', detail: 'Attended SSB at 21 Services Selection Board, Bhopal. Cleared Stage 1 with strong OIR scores — Conferenced Out at the Conference round after completing Stage 2. Each attempt added sharpness to personality and leadership dimensions.', status: 'progress' },
+  { date: 'Mar 2024', event: 'TES-51 | 17 SSB Bangalore', detail: 'Attended SSB for TES-51 at 17 Services Selection Board, Bangalore. Cleared Stage 1 — Conferenced Out after the five-day board. Continued to build command qualities, situational judgment and group leadership skills with steely determination.', status: 'progress' },
+  { date: 'May 2024', event: 'NDA-153 (IAF) | 2 AFSB Mysore', detail: 'Attended SSB at 2 Air Force Selection Board, Mysore. Recommended by the board — AIR 31, Indian Air Force Flying Branch. Also cleared CPSS/PABT (Computerised Pilot Selection System / Pilot Aptitude Battery Test) — a once-in-a-lifetime DRDO-developed cockpit simulator assessment evaluating psychomotor skills, hand-eye-feet coordination, multitasking under pressure, and instrument comprehension for modern IAF fighter jet operations.', status: 'selected', rank: 'AIR 31' },
+  { date: 'Nov 2024', event: 'TES-52 (Army) | 32 SSB Jalandhar', detail: 'Final SSB at 32 Services Selection Board, Jalandhar. Recommended by the board for TES-52 (Indian Army Technical Entry Scheme) — AIR 50. Official merit list published on the Join Indian Army portal confirming the selection. A testament to sustained effort, discipline and unwavering resolve across six SSB attempts.', status: 'selected', rank: 'AIR 50' }
 ];
 
 const certifications = [
