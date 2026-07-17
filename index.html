@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vaibhav Pandey â€” Software Engineer | AI/ML & Full-Stack Developer</title>
+  
+  <meta name="description" content="Professional software engineering portfolio of Vaibhav Pandey, specializing in Full-Stack web development, systems programming and Applied AI/ML.">
+  <meta name="keywords" content="Vaibhav Pandey, Software Engineer, Full-Stack Developer, SDE, AI ML Engineer, React.js, Node.js, Express, PostgreSQL, MongoDB, SQL, Machine Learning, UAV path planning, ASTRA Founder">
+  
+  <!-- OG & Twitter Meta -->
+  <meta property="og:title" content="Vaibhav Pandey â€” Software Engineer | AI/ML & Full Stack">
+  <meta property="og:description" content="Interactive software engineering portfolio displaying full-stack platforms, ML architectures and high-performance algorithms.">
+  <meta property="og:image" content="assets/images/Profile Photo.jpeg">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=2.2">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ðŸš€</text></svg>">
+</head>
+<body>
+
+  <!-- Premium Page Loader -->
+  <div id="page-loader" class="loader-wrapper">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="logo-txt">VP</span>
+        <div class="logo-ring"></div>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-status">INITIALIZING SYSTEM CONTROLS...</div>
+    </div>
+  </div>
+
+  <!-- Full-Screen Interactive Canvas Particle BG -->
+  <canvas id="portfolio-canvas-bg"></canvas>
+
+  <!-- â”€â”€ NAVBAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo" id="nav-logo-btn">
+      <span class="text-orange">VP</span><span style="opacity:0.85">.</span>
+    </a>
+    
+    <nav class="nav-links" id="desktop-nav-menu">
+      <a href="#about" id="nav-about">About</a>
+      <a href="#skills" id="nav-skills">Skills</a>
+      <a href="#projects" id="nav-projects">Projects</a>
+      <a href="#defense" id="nav-defense">Leadership & Milestones</a>
+      <a href="#merit" id="nav-merit">Merit List</a>
+      <a href="#certifications" id="nav-certs">Certifications</a>
+      <a href="#achievements" id="nav-achievements">Achievements</a>
+      <a href="#gallery" id="nav-gallery">Gallery</a>
+      <a href="#contact" id="nav-contact-link">Contact</a>
+    </nav>
+
+    <button class="hamburger" aria-label="Toggle menu" id="hamburger-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <button class="nav-cta" onclick="location.href='#contact'" id="nav-hire-me-btn">Hire Me</button>
+  </header>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="mobile-menu" id="mobile-menu-container">
+    <a href="#about" id="mob-about">About</a>
+    <a href="#skills" id="mob-skills">Skills</a>
+    <a href="#projects" id="mob-projects">Projects</a>
+    <a href="#defense" id="mob-defense">Leadership & Milestones</a>
+    <a href="#merit" id="mob-merit">Merit List</a>
+    <a href="#certifications" id="mob-certs">Certifications</a>
+    <a href="#achievements" id="mob-achievements">Achievements</a>
+    <a href="#gallery" id="mob-gallery">Gallery</a>
+    <a href="#contact" id="mob-contact-link">Contact</a>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- â”€â”€ HERO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="radar-bg">
+        <div class="radar-sweep"></div>
+        <div class="radar-circle circle-1"></div>
+        <div class="radar-circle circle-2"></div>
+        <div class="radar-circle circle-3"></div>
+        <div class="radar-blip blip-1"></div>
+        <div class="radar-blip blip-2"></div>
+      </div>
+      <div class="hero-inner">
+        <div class="reveal">
+          <div class="hero-eyebrow">
+            <span>ðŸ… AIR 31 NDA</span>
+            <span>Â·</span>
+            <span>AIR 50 TES-52</span>
+          </div>
+          <h1 class="hero-name">Vaibhav Pandey</h1>
+          <p class="hero-tagline"><strong>Software Engineer</strong> Â· Full-Stack Developer Â· <strong>AI/ML Developer</strong></p>
+          <p class="hero-intro">Computer Science & Engineering student at BMSIT&M, Bengaluru (CGPA 8.86). Passionate about full-stack architectures, high-performance SDE systems and applied AI/ML applications.</p>
+          <div class="hero-buttons">
+            <a href="assets/pdfs/Resume.pdf" target="_blank" class="btn btn-primary" id="hero-download-resume">View / Download Resume</a>
+            <a href="#projects" class="btn btn-secondary" id="hero-view-projects">View Projects</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/vaibhav-pandey-7ba67033a/" target="_blank" rel="noopener" class="hero-social" aria-label="LinkedIn" id="hero-linkedin-btn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://github.com/mevaibhavpandey" target="_blank" rel="noopener" class="hero-social" aria-label="GitHub" id="hero-github-btn">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://leetcode.com/u/mevaibhavpandey/" target="_blank" rel="noopener" class="hero-social" aria-label="LeetCode" id="hero-leetcode-btn">
+              <svg viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19c-.2-.196-.299-.458-.299-.72s.099-.524.299-.72c.397-.39 1.042-.39 1.438 0l3.702 3.63a1.293 1.293 0 0 0 1.884.012l2.247-2.242c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.247 2.242a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19a.998.998 0 0 1 0-1.44c.397-.39 1.042-.39 1.438 0l4.276 4.19a3.021 3.021 0 0 0 4.205-.038l2.247-2.242c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.247 2.242a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19a.998.998 0 0 1 0-1.44c.397-.39 1.042-.39 1.438 0l3.702 3.63a1.293 1.293 0 0 0 1.884.012l5.434-5.428c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-5.434 5.428a3.021 3.021 0 0 1-4.205.038z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap reveal">
+          <div class="orbit-wrap">
+            <div class="hero-ring">
+              <img src="assets/images/Profile Photo.jpeg" alt="Vaibhav Pandey" class="hero-photo" id="hero-profile-img">
+            </div>
+            <div class="badge-orbit-container">
+              <div class="orbit-point op-1"><div class="orbiting-badge"><span class="text-orange" style="margin-right:4px;">ðŸŽ“</span> CGPA 8.86</div></div>
+              <div class="orbit-point op-2"><div class="orbiting-badge"><span class="text-orange" style="margin-right:4px;">âœˆï¸</span> AIR 31 NDA</div></div>
+              <div class="orbit-point op-3"><div class="orbiting-badge"><span class="text-orange" style="margin-right:4px;">ðŸŽ–ï¸</span> AIR 50 TES</div></div>
+              <div class="orbit-point op-4"><div class="orbiting-badge"><span class="text-orange" style="margin-right:4px;">ðŸš€</span> ASTRA Founder</div></div>
+              <div class="orbit-point op-5"><div class="orbiting-badge"><span class="text-orange" style="margin-right:4px;">ðŸ†</span> Hackathon 1st</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ ABOUT SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section" id="about">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="accent-line"></div>
+          <h2 class="section-title">About Me</h2>
+          <div class="about-text" id="about-content-paragraphs"></div>
+          <div class="about-tags" id="about-interests-chips">
+            <span class="chip">Full-Stack Development</span>
+            <span class="chip chip-gold">Software Engineering</span>
+            <span class="chip chip-emerald">System Design</span>
+            <span class="chip chip-blue">Machine Learning</span>
+            <span class="chip chip-gray">Applied AI</span>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2" style="margin-top: 1rem;">
+          <div class="about-stats" id="about-stats-grid">
+            <div class="stat-box">
+              <div class="stat-num">8.86</div>
+              <div class="stat-label">B.E. CGPA</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Systems Projects</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">AIR 31</div>
+              <div class="stat-label">NDA Merit Rank</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">Founder</div>
+              <div class="stat-label">ASTRA Club</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ SKILLS SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section-full skills-bg" id="skills">
+      <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+        <div class="reveal">
+          <div class="accent-line"></div>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-sub">A comprehensive suite of programming languages, machine learning, autonomous frameworks and simulation suites.</p>
+        </div>
+        <div class="skills-grid" id="skills-cards-container"></div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ PROJECTS SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section" id="projects">
+      <div class="reveal">
+        <div class="accent-line"></div>
+        <h2 class="section-title">Technical Projects</h2>
+        <p class="section-sub">Autonomous control systems, real-time tracking engines, geospatial data pipelines and analytics platforms.</p>
+      </div>
+      <div class="project-list" id="projects-list-container"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ DEFENSE SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section-full defense-bg" id="defense">
+      <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+        <div class="reveal">
+          <div class="accent-line"></div>
+          <h2 class="section-title">Leadership & Milestones</h2>
+          <p class="section-sub">Timeline of technical accomplishments, national-level qualifications and leadership milestones.</p>
+        </div>
+        
+        <div class="defense-grid">
+          <div class="timeline-wrap" id="timeline-events-container">
+            <!-- Timeline elements dynamically added here -->
+            <div class="timeline-container"></div>
+          </div>
+          
+          <div class="reveal reveal-delay-3">
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:1.5rem;" class="text-orange">Official Selections</h3>
+            <div class="sel-cards" id="selections-badge-grid">
+              <div class="sel-card iaf" id="sel-card-iaf">
+                <div class="sel-rank">AIR 31</div>
+                <div class="sel-course">153rd NDA Course</div>
+                <div class="sel-branch">IAF Flying Branch Selection</div>
+              </div>
+              <div class="sel-card army" id="sel-card-army">
+                <div class="sel-rank">AIR 50</div>
+                <div class="sel-course">TES-52 (Army)</div>
+                <div class="sel-branch">Army Technical Entry Scheme</div>
+              </div>
+            </div>
+            
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:1rem;" class="text-gold">SSB Milestones & Training</h3>
+            <div class="history-img" id="ssb-history-graphic-card">
+              <img src="assets/images/gallery/History of SSB.jpeg" alt="History of SSB" class="zoomable" id="ssb-history-graphic">
+              <div class="img-caption">SSB milestones, recommendation certificates and official lists</div>
+            </div>
+            
+            <div class="ssb-strip" id="ssb-strip-gallery">
+              <img src="assets/images/ssb/SSB-1.jpeg" alt="SSB Candidate 1" class="zoomable">
+              <img src="assets/images/ssb/SSB-2.jpeg" alt="SSB Candidate 2" class="zoomable">
+              <img src="assets/images/ssb/SSB-3.jpeg" alt="SSB Group Photo" class="zoomable">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ MERIT VERIFICATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section" id="merit">
+      <div class="reveal">
+        <div class="accent-line"></div>
+        <h2 class="section-title">Official Merit Verification</h2>
+        <p class="section-sub">Direct links to official UPSC and Join Indian Army recommended candidates list for verification.</p>
+      </div>
+      <div class="merit-grid" id="merit-cards-container"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ CERTIFICATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section" id="certifications">
+      <div class="reveal">
+        <div class="accent-line"></div>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-sub">Professional credentials in artificial intelligence, robotics kinematics, large language models and military systems.</p>
+      </div>
+      <div class="certs-grid" id="certifications-cards-container"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ ACHIEVEMENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section" id="achievements">
+      <div class="reveal">
+        <div class="accent-line"></div>
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-sub">Hackathon victories, founding clubs, competitive sport medals and All-India military ranks.</p>
+      </div>
+      <div class="ach-grid" id="achievements-cards-container"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ PHOTO GALLERY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section-full defense-bg" id="gallery">
+      <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem 2rem;">
+        <div class="reveal">
+          <div class="accent-line"></div>
+          <h2 class="section-title">Photo Gallery</h2>
+          <p class="section-sub">A glimpse into the journey â€” SSB selection camps, hackathons, conferences and club aeromodelling workshops.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-outer" id="gallery-outer-container">
+        <div class="gallery-track" id="gallery-scroller-track"></div>
+      </div>
+      
+      <div class="gal-cats" id="gallery-category-filters"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="section" id="contact">
+      <div class="contact-inner reveal">
+        <div class="accent-line" style="margin: 0 auto 1.5rem;"></div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub" style="margin-bottom:1.5rem;">Open to software engineering roles, technical collaborations and industry opportunities.</p>
+        
+        <div>
+          <a href="mailto:vaibhav.pandey1661@gmail.com" class="contact-email" id="contact-email-anchor">
+            <svg style="width:18px;height:18px;fill:currentColor;" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            vaibhav.pandey1661@gmail.com
+          </a>
+        </div>
+        <div>
+          <a href="tel:+918683081192" class="contact-phone" id="contact-phone-anchor">
+            <svg style="width:15px;height:15px;fill:currentColor;transform:scale(1.2);" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +91 8683081192
+          </a>
+        </div>
+
+        <div class="contact-socials" id="contact-social-buttons">
+          <a href="https://www.linkedin.com/in/vaibhav-pandey-7ba67033a/" target="_blank" rel="noopener" class="contact-social" id="contact-linkedin">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/mevaibhavpandey" target="_blank" rel="noopener" class="contact-social" id="contact-github">
+            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://leetcode.com/u/mevaibhavpandey/" target="_blank" rel="noopener" class="contact-social" id="contact-leetcode">
+            <svg viewBox="0 0 24 24" style="width:17px;height:17px;fill:currentColor;"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19c-.2-.196-.299-.458-.299-.72s.099-.524.299-.72c.397-.39 1.042-.39 1.438 0l3.702 3.63a1.293 1.293 0 0 0 1.884.012l2.247-2.242c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.247 2.242a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19a.998.998 0 0 1 0-1.44c.397-.39 1.042-.39 1.438 0l4.276 4.19a3.021 3.021 0 0 0 4.205-.038l2.247-2.242c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.247 2.242a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19a.998.998 0 0 1 0-1.44c.397-.39 1.042-.39 1.438 0l3.702 3.63a1.293 1.293 0 0 0 1.884.012l5.434-5.428c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-5.434 5.428a3.021 3.021 0 0 1-4.205.038z" fill="currentColor"/></svg>
+            LeetCode
+          </a>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required class="form-input" placeholder="e.g. John Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" required class="form-input" placeholder="e.g. john@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required class="form-input" placeholder="Hi Vaibhav, I'd like to discuss..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="contact-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">Â© 2026 Vaibhav Pandey. All Rights Reserved.</span>
+      <span class="footer-sep"></span>
+      <span class="footer-text" style="color:var(--orange)">Built for National Service & Engineering Innovation</span>
+      <span class="footer-sep"></span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/vaibhav-pandey-7ba67033a/" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://github.com/mevaibhavpandey" target="_blank" rel="noopener" class="footer-social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://leetcode.com/u/mevaibhavpandey/" target="_blank" rel="noopener" class="footer-social" aria-label="LeetCode">
+          <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19c-.2-.196-.299-.458-.299-.72s.099-.524.299-.72c.397-.39 1.042-.39 1.438 0l3.702 3.63a1.293 1.293 0 0 0 1.884.012l2.247-2.242c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.247 2.242a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19a.998.998 0 0 1 0-1.44c.397-.39 1.042-.39 1.438 0l4.276 4.19a3.021 3.021 0 0 0 4.205-.038l2.247-2.242c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.247 2.242a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.19a.998.998 0 0 1 0-1.44c.397-.39 1.042-.39 1.438 0l3.702 3.63a1.293 1.293 0 0 0 1.884.012l5.434-5.428c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-5.434 5.428a3.021 3.021 0 0 1-4.205.038z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- â”€â”€ MODAL SYSTEM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal" id="modal-close-btn">&times;</button>
+      <!-- Content injected by JS -->
+    </div>
+  </div>
+
+  <script type="module" src="app.js?v=2.2"></script>
+</body>
+</html>
+

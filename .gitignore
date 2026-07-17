@@ -1,0 +1,8 @@
+node_modules/
+dist/
+clone-portfolio/
+.env
+.DS_Store
+*.log
+.gemini/
+.antigravity/
