@@ -1,4 +1,4 @@
-﻿// Central Content and Logic for Vaibhav Pandey Portfolio
+// Central Content and Logic for Vaibhav Pandey Portfolio
 // No frameworks, simple and vanilla for easy deployment to GitHub Pages.
 
 const personalInfo = {
@@ -203,18 +203,18 @@ const projects = [
       'Responsive HUD UI: Uses clean CSS transitions and dark mode presets to present an immersive testing layout.'
     ],
     color: '#38BDF8',
-    icon: 'â“',
+    icon: 'â “',
     github: 'https://github.com/mevaibhavpandey/Quiz-Application'
   }
 ];
 
 const timelineEvents = [
-  { date: 'Sep 2023', event: 'NDA-1 2023', detail: 'Cleared Stage 1 at SSB â€” demonstrated potential; pursued growth.', status: 'progress' },
-  { date: 'Nov 2023', event: 'TES-50', detail: 'Cleared SSB (Indian Army) â€” building resilience with each attempt.', status: 'progress' },
-  { date: 'Jan 2024', event: 'NDA-2 2023', detail: 'Cleared Stage 1 at SSB â€” continued progress and determination.', status: 'progress' },
-  { date: 'Mar 2024', event: 'TES-51', detail: 'Cleared SSB, qualified and waitlisted â€” closer than ever.', status: 'progress' },
-  { date: 'May 2024', event: 'NDA-153 (IAF)', detail: 'Cleared SSB âœ¦ Selected â€” AIR 31, Indian Air Force Flying Branch.', status: 'selected', rank: 'AIR 31' },
-  { date: 'Nov 2024', event: 'TES-52 (Army)', detail: 'Cleared SSB âœ¦ Selected â€” AIR 50, Indian Army.', status: 'selected', rank: 'AIR 50' }
+  { date: 'Sep 2023', event: 'NDA-1 2023 (IAF)', detail: 'Attended SSB at 1 AFSB Dehradun for NDA-1 2023. Cleared Stage 1 (Officer Intelligence Rating & PPDT) — Conferenced Out after Stage 2 psychological and interview boards.', status: 'progress' },
+  { date: 'Nov 2023', event: 'TES-50 (Army)', detail: 'Attended SSB for TES-50 at 12 SSB Bangalore. Cleared Stage 1 — Conferenced Out after completing the full five-day assessment board.', status: 'progress' },
+  { date: 'Jan 2024', event: 'NDA-2 2023 (IAF)', detail: 'Attended SSB at 1 AFSB Dehradun for NDA-2 2023. Cleared Stage 1 with strong OIR scores — Conferenced Out at Conference round after Stage 2 completion.', status: 'progress' },
+  { date: 'Mar 2024', event: 'TES-51 (Army)', detail: 'Attended SSB for TES-51. Cleared Stage 1 — Conferenced Out after the five-day board. Continued to sharpen leadership and personality dimensions.', status: 'progress' },
+  { date: 'May 2024', event: 'NDA-153 (IAF)', detail: 'Attended SSB at 1 AFSB Dehradun for NDA-153. Recommended by the board — AIR 31, Indian Air Force Flying Branch. Also cleared the CPSS (Computerised Pilot Selection System) and PABT (Pilot Aptitude Battery Test), qualifying for the prestigious IAF Flying Branch pilot assessment.', status: 'selected', rank: 'AIR 31' },
+  { date: 'Nov 2024', event: 'TES-52 (Army)', detail: 'Attended SSB for TES-52 (Indian Army Technical Entry Scheme). Recommended by the board — AIR 50. Official merit list published on Join Indian Army portal confirming selection.', status: 'selected', rank: 'AIR 50' }
 ];
 
 const certifications = [
